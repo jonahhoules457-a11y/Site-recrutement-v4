@@ -187,7 +187,7 @@ function initQuiz() {
     const discord = formData.get("discord");
     const result = wrong > 7 ? "REFUSÉ ❌" : "ACCEPTÉ ✅";
 
-    await fetch("TON_WEBHOOK_DISCORD", {
+    await fetch("https://discord.com/api/webhooks/1483591295292280906/c_C22Y-0qOBzbAuizdLWfEfI6XpjZfKY2RtKhVg8YQK5bJmnGC9vfSCogjgxj2pwXObo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
